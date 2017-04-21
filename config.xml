@@ -18,10 +18,19 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="16" />
+        <preference name="android-targetSdkVersion" value="25" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="~6.1.2" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="~2.3.0">
+        <variable name="XWALK_VERSION" value="23+" />
+        <variable name="XWALK_LITEVERSION" value="xwalk_core_library_canary:17+" />
+        <variable name="XWALK_COMMANDLINE" value="--disable-pull-to-refresh-effect" />
+        <variable name="XWALK_MODE" value="embedded" />
+        <variable name="XWALK_MULTIPLEAPK" value="true" />
+    </plugin>
 </widget>
