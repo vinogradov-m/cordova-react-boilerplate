@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #222;
+}
+
+.content {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  animation: App-content-spin infinite 20s linear;
+}
+
+@keyframes App-content-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
