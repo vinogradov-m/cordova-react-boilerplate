@@ -2,7 +2,9 @@
   "name": "cordova-react-boilerplate",
   "version": "1.0.0",
   "description": "Cordova application boilerplate based on React, Redux and React Router",
-  "scripts": {},
+  "scripts": {
+    "preview": "cross-env NODE_ENV=development node --max_old_space_size=4096 ./node_modules/webpack/bin/webpack --progress --profile --colors"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinogradov-m/cordova-react-boilerplate.git"
@@ -24,6 +26,17 @@
     "webpack"
   ],
   "homepage": "https://github.com/vinogradov-m/cordova-react-boilerplate#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-react-app": "^2.2.0",
+    "babel-register": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.4.1"
+  }
 }

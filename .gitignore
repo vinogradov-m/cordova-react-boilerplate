@@ -1,6 +1,12 @@
+# Dependency directory
+node_modules
+
 # Cordova files
 plugins
 platforms
+
+# Compilled resources
+www
 
 # IDE files
 .idea
