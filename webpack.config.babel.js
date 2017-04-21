@@ -56,6 +56,16 @@ export default {
           }
         })
       },
+      // The "file" loader for svg
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'media/[name].[hash:8].[ext]'
+          }
+        }
+      }
     ]
   },
 
