@@ -1,0 +1,6 @@
+# Cordova files
+plugins
+platforms
+
+# IDE files
+.idea
