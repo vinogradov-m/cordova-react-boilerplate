@@ -1,0 +1,29 @@
+{
+  "name": "cordova-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Cordova application boilerplate based on React, Redux and React Router",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinogradov-m/cordova-react-boilerplate.git"
+  },
+  "author": {
+    "name": "Maxim Vinogradov",
+    "email": "vinogradov.v.maxim@gmail.com",
+    "url": "https://github.com/vinogradov-m"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinogradov-m/cordova-react-boilerplate/issues"
+  },
+  "keywords": [
+    "cordova",
+    "boilerplate",
+    "react",
+    "redux",
+    "webpack"
+  ],
+  "homepage": "https://github.com/vinogradov-m/cordova-react-boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
