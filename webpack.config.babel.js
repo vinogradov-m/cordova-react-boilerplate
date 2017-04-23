@@ -56,13 +56,26 @@ export default {
           }
         })
       },
-      // The "file" loader for svg
+      // Common Image Formats
       {
-        test: /\.svg$/,
+        test: /\.(?:png|jpe?g|gif|ico)$/,
         use: {
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
-            name: 'media/[name].[hash:8].[ext]'
+            name: 'media/[name].[hash:8].[ext]',
+            limit: 8192
+          }
+        }
+      },
+      // Fonts
+      // Paths to fonts can contain query strings, e.g. <path/to/font>?v=x.x.x
+      {
+        test: /\.(?:svg|woff|woff2|ttf|eot)(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            name: 'media/[name].[hash:8].[ext]',
+            limit: 8192
           }
         }
       }

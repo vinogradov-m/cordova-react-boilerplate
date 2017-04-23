@@ -1,7 +1,8 @@
 .app {
   text-align: center;
   height: 100%;
-  background-color: #222;
+  background: #222 url(./logo.png) center no-repeat;
+  background-size: 200px;
 }
 
 .appLogo {
